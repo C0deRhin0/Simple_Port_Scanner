@@ -15,7 +15,7 @@ def scan_port(ip, port, timeout=1):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
         sock.settimeout(timeout)
         try:
-            # connect_ex returns 0 on success
+            #connect_ex returns 0 on success
             return sock.connect_ex((str(ip), port)) == 0
         except Exception:
             return False
