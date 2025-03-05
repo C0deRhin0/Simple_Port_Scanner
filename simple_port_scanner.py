@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""
-SimplePortScanner: A basic multi-threaded network port scanner.
-This tool is intended for educational purposes and authorized testing only.
-"""
+"""SimplePortScanner: A basic multi-threaded network port scanner. This tool is intended for educational purposes and authorized testing only. """
 
 import socket
 import ipaddress
@@ -36,11 +33,10 @@ def scan_ports_on_host(ip, ports, timeout=1, max_threads=100):
 
 def parse_ip_range(ip_range_str):
     """
-    Parse an IP range from a string.
     Accepted formats:
-      - Single IP (e.g., "192.168.1.1")
-      - Dash-separated range (e.g., "192.168.1.1-192.168.1.10")
-      - CIDR notation (e.g., "192.168.1.0/24")
+      - Single IP ("192.168.1.1")
+      - Dash-separated range ("192.168.1.1-192.168.1.10")
+      - CIDR notation ("192.168.1.0/24")
     """
     ip_range_str = ip_range_str.strip()
     if '/' in ip_range_str:
@@ -60,9 +56,9 @@ def parse_port_range(port_range_str):
     """
     Parse a port or range of ports from a string.
     Accepted formats:
-      - Single port (e.g., "80")
-      - Dash-separated range (e.g., "20-80")
-      - Common service names (e.g., "http", "ftp")
+      - Single port ("80")
+      - Dash-separated range ("20-80")
+      - Common service names ("http", "ftp")
     """
     services = {
         'http': 80,
