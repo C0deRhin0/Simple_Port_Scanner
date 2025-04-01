@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """SimplePortScanner: A basic multi-threaded network port scanner. This tool is intended for educational purposes and authorized testing only. """
-
 import socket
 import ipaddress
 import logging
